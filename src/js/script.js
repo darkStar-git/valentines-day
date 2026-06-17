@@ -8,6 +8,7 @@ const modalImg = document.getElementById('modal-img');
 const counter = document.getElementById('counter');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
+const closeBtn = document.querySelector('.close');
 
 let currentIndex = 0;
 
@@ -64,3 +65,9 @@ prevBtn.addEventListener('click', () => {
 });
 
 counter.textContent = `Memória ${currentIndex + 1} de ${images.length}`;
+
+closeBtn.addEventListener('click', () => {
+
+    modal.style.display = 'none';
+
+});
