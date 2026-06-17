@@ -1,0 +1,75 @@
+body.dedicatoria {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .85)), url('../img/fundo-final.png') center center;
+    background-size: cover;
+}
+
+.video-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.video-romantico {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#btnFinal {
+    opacity: 0;
+    pointer-events: none;
+
+    margin-top: 30px;
+
+    padding: 16px 32px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ff6ea8,
+        #ff8dc0
+    );
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 1rem;
+
+    box-shadow:
+        0 0 20px rgba(255, 110, 168, .35);
+
+    transition: all .4s ease;
+}
+
+#btnFinal:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 30px rgba(255, 110, 168, .6);
+}
+
+#btnFinal.show{
+    animation: surgir 1s ease;
+}
+
+@keyframes surgir{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossas Fotos ❤️</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -13,13 +14,14 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/paginas.css">
+    <link rel="stylesheet" href="../css/fotos.css">
 </head>
 
-<body>
+<body class="fotos">
 
     <section class="pagina">
 
-        <h1 class="titulo">Nossas Fotos 📷</h1>
+        <h1 class="titulo" style="color: transparent;">.</h1>
 
         <p>
             Alguns momentos que eu quero guardar para sempre.
@@ -69,8 +71,22 @@
             Nossa História →
         </a>
 
+        <div id="modal" class="modal">
+
+            <span class="close">&times;</span>
+
+            <button class="prev">❮</button>
+
+            <img id="modal-img">
+
+            <button class="next">❯</button>
+
+            <div id="counter" class="counter"></div>
+
+        </div>
     </section>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
